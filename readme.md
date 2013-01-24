@@ -13,7 +13,12 @@ The only place that has any mysql-specific coding is the query on the mobile sch
    1. Run this command at the command line: `mysql -u YOUR_USERNAME -p < install/mysql.sql`
    1. When prompted, enter your MySQL password
 1. Add a CF Datasource for your newly created database
-1. Update `admin/Application.cfc` **line 5** and `/Application.cfc` **line 4** with the new datasource name
+1. Update `/Application.cfc`
+   * **Line 4:** DSN
+1. Update `admin/Application.cfc`
+   * **Line 5:** DSN
+   * **Line 17:** Name of your event
+   * **Line 18:** Email address where you want errors sent (also sent from this address)
 1. Find the Freevent admin at `http://{freevent-install-dir}/admin/`
    1. The default account username is `admin` with password `admin`. I recommend you change the password. Create as many additional user accounts as you need.
 1. Find the mobile schedule view at `http://{freevent-install-dir}/`
