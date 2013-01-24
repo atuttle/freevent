@@ -1,0 +1,42 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+#sidebar {
+	position: fixed;
+}
+
+.cell-yes.cell-yes {
+	background-color: #9FC !important;
+	text-align: center;
+}
+
+.cell-no.cell-no {
+	background-color: #FCC !important;
+	text-align: center;
+}
+
+.sidebar-nav.sidebar-nav {
+	padding: 9px 0;
+}
+.navbar-inner.navbar-inner .btn {
+	margin-top: -3px;
+}
+
+.table .date {
+	white-space: nowrap;
+}
+
+.graph {
+	height: 400px;
+	margin-bottom: 20px;
+}
+
+.fixLabel {
+	width: 25px;
+	text-align: center;
+}
+.statsList {
+	list-style: none;
+}
