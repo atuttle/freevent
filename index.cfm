@@ -1,4 +1,9 @@
 <cfsilent>
+	<cfscript>
+		function className(before){
+			return rereplace(before, '[^A-Za-z0-9]', '', 'ALL');
+		}
+	</cfscript>
 	<cfquery name="qSessions">
 		select
 			sessionId
@@ -44,8 +49,8 @@
 
 						<cfoutput>
 
-							<section class='session #qSessions.track# secondary'>
-								<div class="track #qSessions.track# primary">#qSessions.track#</div>
+							<section class='session #className(qSessions.track)# secondary'>
+								<div class="track #className(qSessions.track)# primary">#qSessions.track#</div>
 								<h4>#qSessions.title#</h4>
 								<div class="speaker">#qSessions.speaker#</div>
 								<div class="location">#qSessions.location#</div>
